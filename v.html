@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Alumni Survey Form</title>
+    <style type="text/css">
+	header{
+	background-color: #CD201F;
+            color: white;
+            padding: 20px;
+	    font-family: Arial, sans-serif;
+            text-align: center;
+		}
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0px;
+        }
+
+       
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+		margin-bottom: 20px; 
+        }
+
+	 fieldset{
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+		margin-bottom: 20px; 
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 15px;
+        }
+
+        table, th, td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        input[type="submit"] {
+            background-color: #CD201F;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #CD201F;
+        }
+   
+       
+
+</style>
+</head>
+<body>
+<header>
+    <h1>Alumni Survey</h1>
+</header>
+    <p>Dear Alumni,</p>
+    <p>We appreciate your assistance in helping us improve our educational program to better serve current and future Computer Science and Engineering students. Your feedback regarding engineering education at SREC and its relevance to your current job activities is valuable to us. Please take a few moments to complete the following survey.</p>
+
+    <form>
+<fieldset>
+        <legend>General Information:</legend>
+        <label for="full-name">Your full name:</label>
+        <input type="text" id="full-name" name="full-name" required>
+	
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="graduation-year">Year of Graduation:</label>
+        <input type="number" id="graduation-year" name="graduation-year" required>
+
+        <label for="residential-address">Residential Address:</label>
+        <textarea id="residential-address" name="residential-address" rows="3" required></textarea>
+
+        <label for="phone-res">Phone Number (Res):</label>
+        <input type="tel" id="phone-res" name="phone-res">
+
+        <label for="mobile-number">Mobile Number:</label>
+        <input type="tel" id="mobile-number" name="mobile-number" required>
+
+        <label for="present-employer">Present Employer address:</label>
+        <textarea id="present-employer" name="present-employer" rows="3" required></textarea>
+
+        <label for="position">Your Position (Please Describe):</label>
+        <input type="text" id="position" name="position" required>
+</fieldset>
+<fieldset>
+        <legend>Information on Education Update:</legend>
+        <label for="education-update">Select your highest education level:</label>
+        <select id="education-update" name="education-update" required>
+            <option value="M.Tech / M.S. Degree">M.Tech / M.S. Degree</option>
+            <option value="MBA">MBA</option>
+            <option value="Other">Other</option>
+        </select>
+
+        <label for="other-education">If Other, Specify:</label>
+        <input type="text" id="other-education" name="other-education">
+</fieldset>
+<fieldset>
+
+        <legend>Information for Assessment of Program Educational Objectives (PEO)</legend>
+        <p>The following are the educational objectives of the Computer Science and Engineering Program; please indicate how important these educational objectives are to your employment experience since graduation using the following scale:</p>
+        <table>
+            <tr>
+                <th>Program Educational Objectives (PEO)</th>
+                <th>3: Extremely important</th>
+                <th>2: Moderately important</th>
+                <th>1: Important</th>
+            </tr>
+            <tr>
+                <td>1: Create innovative Software Products.</td>
+                <td><input type="radio" name="peo1" value="3" required></td>
+                <td><input type="radio" name="peo1" value="2"></td>
+                <td><input type="radio" name="peo1" value="1"></td>
+            </tr>
+		 <tr>
+                <td>2: Pursue a career in the field of computer science and engineering.</td>
+                <td><input type="radio" name="peo1" value="3" required></td>
+                <td><input type="radio" name="peo1" value="2"></td>
+                <td><input type="radio" name="peo1" value="1"></td>
+            </tr>
+		 <tr>
+                <td>3: Pursue higher education and/or professional development courses for life-long learning.</td>
+                <td><input type="radio" name="peo1" value="3" required></td>
+                <td><input type="radio" name="peo1" value="2"></td>
+                <td><input type="radio" name="peo1" value="1"></td>
+            </tr>
+		 <tr>
+                <td>4: Support community building activities to improve the quality of life.</td>
+                <td><input type="radio" name="peo1" value="3" required></td>
+                <td><input type="radio" name="peo1" value="2"></td>
+                <td><input type="radio" name="peo1" value="1"></td>
+            </tr>
+        </table>
+</fieldset>
+<fieldset>
+        <legend>Information for Assessment of Educational Program Outcomes</legend>
+        <p>Using the following scale, please tell us how well you think you were prepared at graduation in the following areas:</p>
+        <table>
+            <tr>
+                <th>Program Outcome (PO)</th>
+                <th>3: Well prepared</th>
+                <th>2: Adequately prepared</th>
+                <th>1: Inadequately prepared</th>
+            </tr>
+            <tr>
+                <td>PO 1: Engineering knowledge: Apply the knowledge of mathematics, science, engineering fundamentals, and an engineering specialization for the solution of complex engineering problems.</td>
+                <td><input type="radio" name="po1" value="3" required></td>
+                <td><input type="radio" name="po1" value="2"></td>
+                <td><input type="radio" name="po1" value="1"></td>
+            </tr>
+            <tr>
+                <td>PO 2: Problem analysis: Identify, formulate, research literature, and analyse complex engineering problems reaching substantiated conclusions using first principles of mathematics, natural sciences, and engineering sciences.</td>
+                <td><input type="radio" name="po1" value="3" required></td>
+                <td><input type="radio" name="po1" value="2"></td>
+                <td><input type="radio" name="po1" value="1"></td>
+            </tr>
+<tr>
+                <td>PO 3: Design/Development of Solutions: Design solutions for complex engineering problems and design system components or processes that meet the specified needs with appropriate consideration for public health and safety, and cultural, societal, and environmental considerations.
+</td>
+                <td><input type="radio" name="po1" value="3" required></td>
+                <td><input type="radio" name="po1" value="2"></td>
+                <td><input type="radio" name="po1" value="1"></td>
+            </tr>
+		<tr>
+                <td>PO 4: Investigate complex problems: Use research-based knowledge and research methods including design of experiments, analysis and interpretation of data, and synthesis of the information to provide valid conclusions.</td>
+                <td><input type="radio" name="po1" value="3" required></td>
+                <td><input type="radio" name="po1" value="2"></td>
+                <td><input type="radio" name="po1" value="1"></td>
+            </tr>
+		<tr>
+                <td>PO 5: Modern tool usage: Create, select, and apply appropriate techniques, resources, and modern engineering and IT tools including prediction and modelling to complex engineering activities with an understanding of the limitations.
+</td>
+                <td><input type="radio" name="po1" value="3" required></td>
+                <td><input type="radio" name="po1" value="2"></td>
+                <td><input type="radio" name="po1" value="1"></td>
+            </tr>
+		<tr>
+                <td>PO 6: The engineer and society: Apply reasoning informed by the contextual knowledge to assess societal, health, safety, legal and cultural issues and the consequent responsibilities relevant to the professional engineering practice.</td>
+                <td><input type="radio" name="po1" value="3" required></td>
+                <td><input type="radio" name="po1" value="2"></td>
+                <td><input type="radio" name="po1" value="1"></td>
+            </tr>
+		<tr>
+                <td>PO 7: Environment and sustainability: Understand the impact of the professional engineering solutions in societal and environmental contexts, and demonstrate the knowledge of, and need for sustainable development.</td>
+                <td><input type="radio" name="po1" value="3" required></td>
+                <td><input type="radio" name="po1" value="2"></td>
+                <td><input type="radio" name="po1" value="1"></td>
+            </tr>
+		<tr>
+                <td>PO 8:  Ethics: Apply ethical principles and commit to professional ethics and responsibilities and norms of the engineering practice.
+ </td>
+                <td><input type="radio" name="po1" value="3" required></td>
+                <td><input type="radio" name="po1" value="2"></td>
+                <td><input type="radio" name="po1" value="1"></td>
+            </tr>
+		<td>PO  9: Individual and team work: Function effectively as an individual, and as a member or leader in diverse teams, and in multidisciplinary settings.
+ </td>
+                <td><input type="radio" name="po1" value="3" required></td>
+                <td><input type="radio" name="po1" value="2"></td>
+                <td><input type="radio" name="po1" value="1"></td>
+            </tr>
+		<td>PO 10: Communication: Communicate effectively on complex engineering activities with the engineering community and with the society at large, such as, being able to comprehend and write effective reports and design documentation, make effective presentations, and give and receive clear instructions.
+ </td>
+                <td><input type="radio" name="po1" value="3" required></td>
+                <td><input type="radio" name="po1" value="2"></td>
+                <td><input type="radio" name="po1" value="1"></td>
+            </tr>
+		<td>PO 11: Project management and finance: Demonstrate knowledge and understanding of the engineering and management principles and apply these to one’s own work, as a member and leader in a team, to manage projects and in multidisciplinary environments.
+
+ </td>
+                <td><input type="radio" name="po1" value="3" required></td>
+                <td><input type="radio" name="po1" value="2"></td>
+                <td><input type="radio" name="po1" value="1"></td>
+            </tr>
+		<td>PO 12: Life-long learning: Recognise the need for, and have the preparation and ability to engage in independent and life-long learning in the broadest context of technological change.
+ </td>
+                <td><input type="radio" name="po1" value="3" required></td>
+                <td><input type="radio" name="po1" value="2"></td>
+                <td><input type="radio" name="po1" value="1"></td>
+            </tr>
+		<td>(PSO)1: Apply mathematical foundations, algorithmic principles , and theoretical computer science in the modeling and design of computer based systems in way that demonstrates comprehension of the tradeoffs involved in design choices.
+ </td>
+                <td><input type="radio" name="po1" value="3" required></td>
+                <td><input type="radio" name="po1" value="2"></td>
+                <td><input type="radio" name="po1" value="1"></td>
+            </tr>
+		<td>(PSO)2: Apply design and development principles in the construction of software systems of varying complexity</td>
+                <td><input type="radio" name="po1" value="3" required></td>
+                <td><input type="radio" name="po1" value="2"></td>
+                <td><input type="radio" name="po1" value="1"></td>
+            </tr>
+		
+        </table>
+</fieldset>
+
+
+         <fieldset>
+            <legend>Feedback</legend>
+            <label for="experience">How would you rate your educational experience at the Department of CSE?</label>
+            <select id="experience" name="experience" required>
+                <option value="">Select rating</option>
+                <option value="10">Excellent</option>
+                <option value="8">Very Good</option>
+                <option value="6">Good</option>
+                <option value="4">Fair</option>
+                <option value="2">Poor</option>
+            </select>
+
+            <label for="suggestions">Do you have any suggestions for improvement?</label>
+            <textarea id="suggestions" name="suggestions" rows="4"></textarea>
+        </fieldset>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
